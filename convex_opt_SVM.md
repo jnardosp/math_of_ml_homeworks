@@ -56,4 +56,30 @@ $$\text{S.T :} \;1 - y_{i}(wx_{i}-b) \leq 0\; \forall i = 1, ..., N$$
 Through Lagrange Multipliers method we introduce a Lagrange multiplier $\alpha_i \geq 0$  for each constraint.
 
 The Lagrangian is:
-$$L(w, b,\alpha)
+$$L(w, b,\alpha)=\frac{1}{2}\Vert w \Vert^2+\sum_{i=1}^{n}\alpha_{i} \:[1-y_{i}(w^\top x_{i}-b)]$$
+
+### Karush-Kuhn-Tucker (KKT) Conditions
+
+We use KKT conditions to find the minimum. Partial derivatives of L with respect to primal variables $w,b$ and set them to zero:
+* With $w$ variable:
+  $$\nabla_{w}L=w  - \sum_{i=1}^{n} \alpha_i y_i x_i = 0 \Rightarrow w = \sum_{i=1}^{n} \alpha_i y_i x_i $$
+  Which shows that the optimal weight vector is a linear combination of the training examples.
+
+* With $b$ variable:
+  $$\frac{\partial L}{\partial b} = - \sum_{i=1}^{n}\alpha_i y_i = 0 \Rightarrow \sum_{i=1}^{n}\alpha_i y_i = 0$$
+
+### Dual problem
+1.  Substitute $w = \sum \alpha_i y_i x_i$ into $\frac{1}{2}\|w\|^2$:
+    $$\frac{1}{2} \left( \sum_i \alpha_i y_i x_i \right) \cdot \left( \sum_j \alpha_j y_j x_j \right) = \frac{1}{2} \sum_i \sum_j \alpha_i \alpha_j y_i y_j (x_i \cdot x_j)$$
+2.  Substitute into the constraint term:
+    $$\sum_i \alpha_i - \sum_i \alpha_i y_i (w^T x_i + b) = \sum_i \alpha_i - \sum_i \sum_j \alpha_i \alpha_j y_i y_j (x_i \cdot x_j) - b \sum_i \alpha_i y_i$$
+
+Since $\sum \alpha_i y_i = 0$. Resulting **Dual Objective Function** $Q(\alpha)$ is:
+$$Q(\alpha) = \sum_{i=1}^{N} \alpha_i - \frac{1}{2} \sum_{i=1}^{N} \sum_{j=1}^{N} \alpha_i \alpha_j y_i y_j (x_i^T x_j)$$
+
+### Quadratic Programming (QP)
+Instead of minimizing over $w$, we **maximize** the dual function $Q(\alpha)$ subject to:
+1.  $\sum_{i=1}^{N} \alpha_i y_i = 0$
+2.  $\alpha_i \geq 0$ for all $i = 1, \dots, N$
+
+This is a **Quadratic Programming (QP)** problem. Often solved using algorithms like **Sequential Minimal Optimization (SMO)**.
