@@ -76,6 +76,7 @@ We use KKT conditions to find the minimum. Partial derivatives of L with respect
 * With $w$ variable:
 
   $$\nabla_{w}L=w  - \sum_{i=1}^{n} \alpha_i y_i x_i = 0 \Rightarrow w = \sum_{i=1}^{n} \alpha_i y_i x_i $$
+  
   Which shows that the optimal weight vector is a linear combination of the training examples.
 
 * With $b$ variable:
