@@ -28,17 +28,17 @@ $$x \mapsto sgn(w^\top x - b)$$
 ### Why is it **Convex**?
 For an optimization problem to be convex, we need to minimize a **convex objective function over a convex set**.
 
-Remember convex definition, a function $f: {\rm I\!R}^n \mapsto {\rm I\!R}$ is convex if for any 2 points u, v in its domain and any $\lambda \in [0,1]$:
+Remember convex definition, a function $f: {R}^n \mapsto {R}$ is convex if for any 2 points u, v in its domain and any $\lambda \in [0,1]$:
 
 $$f(λu+(1−λ)v)≤λf(u)+(1−λ)f(v).$$
 
 Checking **Euclidean norm** $\Vert w \Vert$
 
-Take any 2 vectors $w_{1}, w_{2} \in {\rm I\!R}^n$ and any $\lambda \in [0,1]$.
+Take any 2 vectors $w_{1}, w_{2} \in {R}^n$ and any $\lambda \in [0,1]$.
 
 We have the **triangle inequality**:
 
-$$​∥λw_{1}​+(1−λ)w_{2}​∥​≤∥λw_{1}​∥+∥(1−λ)w_{2}​∥$$
+$$​\Vertλw_{1}​+(1−λ)w_{2}​\Vert​ \leq \Vert λw_{1}​\Vert+\Vert(1−λ)w_{2}​\Vert$$
 
 Which is exactly the convexity inequality, so the ***objective function is convex***.
 
