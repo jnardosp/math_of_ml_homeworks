@@ -34,9 +34,9 @@ end
 ### The **exercise 1.3** states that:
 The weight update rule has the nice interpretation that it moves in the direction of classifying x(t) correctly.
 
-**a) Show that $\; y(t)w^\top(t)x(t) < 0 \;$ [Hint: $x(t)$ is misclassified by $w(t)$].**
+**a) Show that $ y(t)w^\top(t)x(t) < 0 $ [Hint: $x(t)$ is misclassified by $w(t)$].**
 
-**b) Show that $\; y(t)w^\top(t+1)x(t) > y(t)w^\top(t)x(t)$.**
+**b) Show that $ y(t)w^\top(t+1)x(t) > y(t)w^\top(t)x(t)$.**
 
 **c) As far as classifying $x(t)$ is concerned, argue that the move from w(t) to w(t+1) is a move 'in the right direction'.**
 
@@ -69,7 +69,7 @@ Because $||x||^2$ is always positive: $$w(t+1)^\top x > w(t)^\top x$$ moving the
 
 The argument is similar, if $x \in N$ and **$w^\top(t)x(t) \geq 0$** then x is misclassified as positive.
 
-So we update the weight $\; w(t+1) = w(t) - x \;$ like:
+So we update the weight $ w(t+1) = w(t) - x $ like:
 
 $$\begin{aligned}
 w(t+1)^\top x &= [w-x]^\top x \\

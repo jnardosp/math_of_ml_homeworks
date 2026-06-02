@@ -3,7 +3,7 @@
 We have this convex optimization problem related to the training of a Support Vector Machine:
 
 $$\text{Min: } \Vert w \Vert$$
-$$\text{S.T  } y_{i}(wx_{i}-b) \geq 1\; \forall i = 1, ..., N$$
+$$\text{S.T  } y_{i}(wx_{i}-b) \geq 1 \forall i = 1, ..., N$$
 
 Remember for hard-margin SVMs we have that:
 If the data is linearly separable, we can select **two parrallel hyperplanes** that separate the 2 classes of data, so that the distance between them is as large as possible.
@@ -12,8 +12,8 @@ With a normalized dataset, these hyperplanes are described by:
 
 $$
 \begin{cases}
-    w^{\top} x - b = 1\; \text{(anything on or above this boundary with label 1)} \\
-    w^{\top} x - b = -1\; \text{(anything on or below this boundary with label 0)} \\
+    w^{\top} x - b = 1 \text{(anything on or above this boundary with label 1)} \\
+    w^{\top} x - b = -1 \text{(anything on or below this boundary with label 0)} \\
 \end{cases}
 $$
 
@@ -62,13 +62,13 @@ as this equal problem:
 
 $$\text{Min: } f(w)=\frac{1}{2}\Vert w \Vert^2$$
 
-$$\text{S.T :} \;1 - y_{i}(wx_{i}-b) \leq 0\; \forall i = 1, ..., N$$
+$$\text{S.T :} 1 - y_{i}(wx_{i}-b) \leq 0 \forall i = 1, ..., N$$
 
 Through Lagrange Multipliers method we introduce a Lagrange multiplier $\alpha_i \geq 0$  for each constraint.
 
 The Lagrangian is:
 
-$$L(w, b,\alpha)=\frac{1}{2}\Vert w \Vert^2+\sum_{i=1}^{n}\alpha_{i} \:[1-y_{i}(w^\top x_{i}-b)]$$
+$$L(w, b,\alpha)=\frac{1}{2}\Vert w \Vert^2+\sum_{i=1}^{n}\alpha_{i} [1-y_{i}(w^\top x_{i}-b)]$$
 
 ### Karush-Kuhn-Tucker (KKT) Conditions
 
@@ -76,7 +76,7 @@ We use KKT conditions to find the minimum. Partial derivatives of L with respect
 * With $w$ variable:
 
   $$\nabla_{w}L=w  - \sum_{i=1}^{n} \alpha_i y_i x_i = 0 \Rightarrow w = \sum_{i=1}^{n} \alpha_i y_i x_i $$
-  
+
   Which shows that the optimal weight vector is a linear combination of the training examples.
 
 * With $b$ variable:
