@@ -21,8 +21,12 @@ Key aspects covered:
 - Relationship between the winning methods and non-negative matrix factorization approaches
 
 ## Homework 5: Hypothesis set of KNN & training algorithm
+We know **KNN** is a particular ML algorithm, because is an **instance-based algorithm**, how can we define its *hypothesis set and "training"*?
 
 ## Homework 6: Concentration bounds
+* Prove **Markov bound** & show 1 example with it
+* Prove **Chebyshev bound**
+* Prove **Hoeffding bound** (supposing Hoeffding lemma)
 
 ## Homework 7:
 
