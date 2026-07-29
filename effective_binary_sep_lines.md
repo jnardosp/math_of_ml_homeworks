@@ -1,4 +1,4 @@
-# Effective binary separating lines
+## Effective binary separating lines
 Effective binary separating lines are all possible hyperplanes that classify data using two labels how many of them can separate 5 points (like in a pentagon)?
 ## Simplest example: Two data points
 If we have two data points arranged as follows,
