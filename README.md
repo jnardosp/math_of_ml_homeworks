@@ -28,7 +28,8 @@ We know **KNN** is a particular ML algorithm, because is an **instance-based alg
 * Prove **Chebyshev bound**
 * Prove **Hoeffding bound** (supposing Hoeffding lemma)
 
-## Homework 7:
+## Homework 7: Inequalities learning slide 29/30
+We had a class where we talked about the Hoeffding inequality and PAC to analyze ML algorithms where we questioned about the relation between $\nu$ (model error on training data) and $\mu$ (model true error on new data) is $\mu \approx \nu$?
 
 ## Homework 8:
 
