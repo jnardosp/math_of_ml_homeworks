@@ -19,3 +19,21 @@ Key aspects covered:
 - Prediction of movie rating probabilities for user/movie pairs
 - The challenge of estimating ratings for pairs not present in the training set
 - Relationship between the winning methods and non-negative matrix factorization approaches
+
+## Homework 5: Hypothesis set of KNN & training algorithm
+
+## Homework 6: Concentration bounds
+
+## Homework 7:
+
+## Homework 8:
+
+## Homework 9:
+
+## Homework 10:
+
+## Homework 11:
+
+## Homework 12:
+
+## Homework 13:
