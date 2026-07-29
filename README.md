@@ -31,7 +31,8 @@ We know **KNN** is a particular ML algorithm, because is an **instance-based alg
 ## Homework 7: Inequalities learning slide 29/30
 We had a class where we talked about the Hoeffding inequality and PAC to analyze ML algorithms where we questioned about the relation between $\nu$ (model error on training data) and $\mu$ (model true error on new data) is $\mu \approx \nu$?
 
-## Homework 8:
+## Homework 8: Hoeffding inequality parameters N control
+With Hoeffding inequality we have parameters $\epsilon$ and $\delta$, a natural question arises: which parameter is best to control in order to manage the amount of data required for the inequality to hold ($N$)?
 
 ## Homework 9:
 
