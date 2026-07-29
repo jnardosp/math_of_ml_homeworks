@@ -34,7 +34,8 @@ We had a class where we talked about the Hoeffding inequality and PAC to analyze
 ## Homework 8: Hoeffding inequality parameters N control
 With Hoeffding inequality we have parameters $\epsilon$ and $\delta$, a natural question arises: which parameter is best to control in order to manage the amount of data required for the inequality to hold ($N$)?
 
-## Homework 9:
+## Homework 9: Effective binary separation lines
+Effective binary separating lines are all possible hyperplanes that classify data using two labels how many of them can separate 5 points (like in a pentagon)?
 
 ## Homework 10:
 
