@@ -40,7 +40,8 @@ Effective binary separating lines are all possible hyperplanes that classify dat
 ## Homework 10: Junctions of a shallow NN
 When we analyze shallow neural networks we see that the final function is a piecewise linear function, where does that junctions come from?
 
-## Homework 11:
+## Homework 11: Folds of a many layers NN
+When we make deeper neural networks the expressive power of them grow bigger, can we estimate how many regions can they express?
 
 ## Homework 12:
 
