@@ -37,7 +37,8 @@ With Hoeffding inequality we have parameters $\epsilon$ and $\delta$, a natural 
 ## Homework 9: Effective binary separation lines
 Effective binary separating lines are all possible hyperplanes that classify data using two labels how many of them can separate 5 points (like in a pentagon)?
 
-## Homework 10:
+## Homework 10: Junctions of a shallow NN
+When we analyze shallow neural networks we see that the final function is a piecewise linear function, where does that junctions come from?
 
 ## Homework 11:
 
