@@ -1,4 +1,4 @@
-## Junctions of a shallow NN
+## Folds of a shallow NN
 We defined a shallow neural network is a function
 ```math
 y = f[\mathbf{x}, \boldsymbol{\phi}]
@@ -28,8 +28,8 @@ In this example the activation function is the ReLU,
 a[z] = \text{ReLU}(z)=\begin{cases} 0, & z < 0, \\ z, & z \ge 0 \end{cases}
 ```
 
-### Origin of the junctions
-The junctions are the transition point of each hidden neuron between its inactive and active states. A hidden neuron changes behavior when its pre-activation becomes zero:
+### Origin of the folds
+The folds/junctions are the transition point of each hidden neuron between its inactive and active states. A hidden neuron changes behavior when its pre-activation becomes zero:
 ```math
 \theta_{i0}+\theta_{i1}x=0
 ```
@@ -50,8 +50,8 @@ Therefore, each hidden unit introduces a point where the slope of the function c
 ### Geometric Interpretation
 A **shallow neural network with ReLU activations represents a piecewise linear function**. The following ideas are key to understanding shallow networks geometrically.
 
-- Each hidden neuron contributes with one junction.
-- Between two consecutive junctions, the network behaves as a linear function.
+- Each hidden neuron contributes with one fold.
+- Between two consecutive folds, the network behaves as a linear function.
 - The expressive power of the network increases with the number of hidden neurons because more junctions can be created.
 
 Thus, the junctions in a shallow neural network originate from the activation boundaries of the hidden ReLU units.
