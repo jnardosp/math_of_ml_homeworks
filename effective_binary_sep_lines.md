@@ -3,9 +3,16 @@ Effective binary separating lines are all possible hyperplanes that classify dat
 ## Simplest example: Two data points
 If we have two data points arranged as follows,
 
-there are four effective binary separating lines, as shown below.
+![eff_binary1](img/eff_binary1.png)
 
-Notice that circles and squares represent different labels, while dashed lines represent hyperplanes that classify the data (these could be SVM or FF Network).
+there are four effective binary separating lines, as shown below.
+<p align="center">
+  <img width="22%" alt="eff_binary2" src="img/eff_binary4.png" />
+  <img width="22%" alt="eff_binary3" src="img/eff_binary2.png" />
+  <img width="22%" alt="eff_binary4" src="img/eff_binary3.png" />
+  <img width="22%" alt="eff_binary5" src="img/eff_binary5.png" />
+</p>
+Notice that different colors represent different labels, while lines represent hyperplanes that classify the data (these could be SVM or FF Network).
 
 ### General Form of a Hyperplane
 In $\mathbb{R}^2$, a separating hyperplane can be written as
@@ -32,7 +39,7 @@ w^T x + b < 0 \qquad \text{(label -1)}
 When the data is linearly separable, there are infinitely many hyperplanes that classify very well. Effective binary separating lines partition the input space into two regions, assigning each region to one of the two labels.
 
 ## Five data points
-In other case, if we have 5 points distributed as follows
+If we have 5 points distributed as follows
 
 There are cases where the points are separated by hyperplanes, such as
 
