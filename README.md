@@ -43,6 +43,7 @@ When we analyze shallow neural networks we see that the final function is a piec
 ## Homework 11: Folds of a many layers NN
 When we make deeper neural networks the expressive power of them grow bigger, can we estimate how many regions can they express?
 
-## Homework 12:
+## Homework 12: Model XOR with perceptrons
+Can a XOR be modeled with 1 perceptron? If not with how many?
 
 ## Homework 13:
