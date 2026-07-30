@@ -41,9 +41,10 @@ Effective binary separating lines are all possible hyperplanes that classify dat
 When we analyze shallow neural networks we see that the final function is a piecewise linear function, where does that junctions come from?
 
 ## Homework 11: Folds of a many layers NN
-When we make deeper neural networks the expressive power of them grow bigger, can we estimate how many regions can they express?
+When we make deeper neural networks their expressive power grow bigger, can we estimate how many regions can they express?
 
 ## Homework 12: Model XOR with perceptrons
 Can a XOR be modeled with 1 perceptron? If not with how many?
 
-## Homework 13:
+## Homework 13: Hoeffding inequality doesn't apply
+We showed that hoeffding inequality applies with high probability, can we show with an experiment when it doesn't?
