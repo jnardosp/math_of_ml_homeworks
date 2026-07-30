@@ -47,9 +47,10 @@ There are cases where the points are separated by hyperplanes, such as
   <img width="30%" alt="eff_binary2" src="img/eff_binary7.png" />
   <img width="30%" alt="eff_binary3" src="img/eff_binary8.png" />
 </p>
-We know that there can be at most $2^5=32$ effective separating lines for the 5 points, but there are cases where the points cannot have certain labels (because they aren't linearly separable), like this:
+We know that there can be at most $2^5=32$ effective separating lines for the 5 points, but there are cases where the points cannot have certain labels (because they aren't linearly separable), like this
 
 ![eff_binary9](img/eff_binary9.png)
+
 When A, C are of one label and B, D, E are of the other one. The case where the points take the opposite labels also applies. 
 Following this logic, we have 5 similar graphs with the same characteristics; therefore, there are 10 cases where no effective separating line exists.
 
