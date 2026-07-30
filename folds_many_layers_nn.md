@@ -16,7 +16,10 @@ $$y=\phi_0+\phi_1h_1+\phi_2h_2+\phi_3h_3$$
 
 The activation function is the ReLU,
 
-$$a(z)=\max(0,z)=\begin{cases}0, & z<0,\\z, & z ≥ 0\end{cases}$$
+$$a(z)=\max(0,z)=\begin{cases}
+0, & z<0,\\
+z, & z ≥ 0
+\end{cases}$$
 
 Each hidden neuron changes its activation state when
 
